@@ -115,7 +115,7 @@ class Classroom {
         let listOfStudents = '';
         for(let i = 0; i < this.classroom.length; i++){
             listOfStudents += i + '. ' + this.classroom[i].firstName + ' '
-             + this.classroom[i].lastName + ' ' + this.classroom[i].grade + '\n';
+             + this.classroom[i].lastName + ' ' + 'Grade: ' + this.classroom[i].grade + '\n';
         }
         alert(listOfStudents);
     }
