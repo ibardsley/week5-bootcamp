@@ -93,7 +93,7 @@ class Classroom {
         let index = prompt('Enter the index of the student you would like to view.');
         if(index > -1 && index < this.classroom.length){
             this.selectedStudent = this.classroom[index];
-            let title = `Student: ${this.selectedStudent.firstName} ${this.selectedStudent.lastName} ${this.selectedStudent.grade} \n`;
+            let title = `Student: ${this.selectedStudent.firstName} ${this.selectedStudent.lastName} Grade: ${this.selectedStudent.grade} \n`;
 
             for(let i = 0; i < this.selectedStudent.subjects.length; i++){
                 title += i + '. ' + this.selectedStudent.subjects[i].name + ' ' + '\n';
